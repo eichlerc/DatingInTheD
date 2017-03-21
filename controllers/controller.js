@@ -1,17 +1,17 @@
 var app = angular.module('cheapDate');
 
+//needed to initiallize the jsonObject outside of the controller function.
 var jsonObject = {};
 app.controller("cuisCtrl", function($scope, $http){
-// $scope.jsonObject=[];
 
       $scope.cuisine=function(){
          $http({
               method: "GET",
-              url: "https://developers.zomato.com/api/v2.1/cuisines?city_id=285",
-              // headers: {"user-key":"fd1e005e05d56aaca19b77f9469c04ae"}
+//using the cuisines url with city_id 285 (metro Detroit). We may need multiple urls to accomplish what we want.
+              url: "https://developers.zomato.com/api/v2.1/cuisines?city_id=285"
           }).then(function successCallback(response) {
-              // $scope.jsonObject = response.data.cuisines;
               console.log(response);
+//the response is built in angular and automatically pulls the data from the API. Just need to set the response = jsonObject so we can access the information.
               jsonObject = response;
           });
         }
