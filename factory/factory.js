@@ -11,7 +11,8 @@ return {
     function dates(){
       var places =  $http({
               method: "GET",
-              url: "https://developers.zomato.com/api/v2.1/cuisines?city_id=285",
+              url: "https://developers.zomato.com/api/v2.1/search?entity_id=285&entity_type=city&sort=cost&order=asc"
+//              url: "https://developers.zomato.com/api/v2.1/cuisines?city_id=285",
 //              headers: {"user-key":"fd1e005e05d56aaca19b77f9469c04ae"}
           }).then(function successCallback(response) {
 //            console.log(response);
