@@ -2,13 +2,27 @@
 <html ng-app="cheapDate">
 <head>
 	<title>Food App</title>
+  <link rel="stylesheet" type="text/css" href="bootstrapLab/dist/css/bootstrap.min.css">
 </head>
 <body>
-<div ng-controller="cuisCtrl">
+  <div class="row">
+    <div class="col-md-12"></div>
 
-		<cuisine></cuisine>
+    </div>
+<div class="row">
+  <div class="col-md-4"> </div>
+  <div class="col-md-4"> </div>
+    <div class="col-md-4"> </div>
+
+</div>
+<div class="row" ng-controller="cuisCtrl">
+  <div class="col-md-12">
 
 
+<a href="#/cuisines">Show the Cuisines</a>
+		<ng-view ng-repeat="cuisines in cuisine"></ng-view>
+
+</div>
 </div>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
