@@ -14,8 +14,10 @@ return {
               url: "https://developers.zomato.com/api/v2.1/cuisines?city_id=285",
 //              headers: {"user-key":"fd1e005e05d56aaca19b77f9469c04ae"}
           }).then(function successCallback(response) {
-  //          console.log(response);
-            jsonObject = response;
+//            console.log(response);
+            jsonObject = response.data;
+            return jsonObject;
+
 
           });
           return places;
@@ -23,8 +25,7 @@ return {
 
 //returns the jsonObject
       function datespot(){
-        dates();
-        console.log(jsonObject)
+
         return jsonObject;
       }
 });
