@@ -25,11 +25,17 @@ h4{
 	padding: 1%;
 }
 
-/*3x6x3 ng-view*/
 
-.listings section {
-  background-color: blue;
+.listings section{
+  background:url(../images/wood.jpg);
 }
+
+.listings p{
+	    margin: -2% 48%;
+    font-size: 20px;
+    color: white;
+}
+
 
 /*.listings img {
   float: right;
@@ -46,7 +52,8 @@ img {
     vertical-align: middle;
     width: 35%;
     height: auto;
-    margin: 1% auto;
+    
+        margin: 3% 3%;
 }
 
 img {
@@ -56,6 +63,12 @@ img {
 .displayFood div{
   display: inline-block;
 }
+
+/*.map{
+	background: url(../images/map.jpg); 
+	background-attachment: center center;
+	height: 2000px ;
+}*/
 
 /**************************
 media queries
