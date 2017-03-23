@@ -1,6 +1,1 @@
-
-
-    <p>{{food.$$state.value.cuisines[0].cuisine.cuisine_name}}</p>
-    <p>{{food.$$state.value.cuisines[1].cuisine.cuisine_name}}</p>
-    <p>{{food.$$state.value.cuisines[50].cuisine.cuisine_name}}</p>
-    <p>{{food.$$state.value.cuisines[75].cuisine.cuisine_name}}</p>
+<p ng-repeat="foodstuff in food"> {{ foodstuff.restaurant.cuisines}}</p>    

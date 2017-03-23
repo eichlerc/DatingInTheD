@@ -2,7 +2,7 @@ var app= angular.module('cheapDate');
 
 app.factory("dateFactory", function($http){
 
-var jsonObject={};
+var jsonObject=[];
 return {
   dates : dates,
   datespot : datespot
@@ -11,13 +11,12 @@ return {
     function dates(){
       var places =  $http({
               method: "GET",
-              url: "https://developers.zomato.com/api/v2.1/cuisines?city_id=285",
+              url: "https://developers.zomato.com/api/v2.1/search?entity_id=285&entity_type=city&sort=cost&order=asc"
 //              headers: {"user-key":"fd1e005e05d56aaca19b77f9469c04ae"}
           }).then(function successCallback(response) {
-//            console.log(response);
-            jsonObject = response.data;
-            return jsonObject;
-
+            console.log(response);
+            jsonObject = response.data.restaurants;
+            // return jsonObject;
 
           });
           return places;
