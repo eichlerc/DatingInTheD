@@ -1,2 +1,6 @@
-
-<p ng-repeat="foodstuff in food"> {{ foodstuff.restaurant.cuisines}}</p>
+<div class ="listings" ng-repeat="foodstuff in food">
+  {{ foodstuff.restaurant.name}} <br>
+  {{ foodstuff.restaurant.currency}}<br>
+  {{ foodstuff.restaurant.cuisines}} <br>
+  <img src="{{ foodstuff.restaurant.featured_image}}" alt="">
+</div>
