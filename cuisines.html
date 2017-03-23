@@ -1,6 +1,11 @@
-<div class ="listings" ng-repeat="foodstuff in food">
-  {{ foodstuff.restaurant.name}} <br>
-  {{ foodstuff.restaurant.currency}}<br>
-  {{ foodstuff.restaurant.cuisines}} <br>
+<br>
+<input type="text" ng-model = 'listItem'>
+<div class ="listings" ng-repeat="foodstuff in food | filter: listItem">
+  <p id = "cuisine">CUISINES: {{ foodstuff.restaurant.cuisines}}</p>
+  <p>RESTUARANT: {{ foodstuff.restaurant.name}}</p>
+  <p>COST: {{ foodstuff.restaurant.currency}}</p>
+  <p>COST: {{ foodstuff.restaurant.price_range}}</p>
+
+
   <img src="{{ foodstuff.restaurant.featured_image}}" alt="">
 </div>

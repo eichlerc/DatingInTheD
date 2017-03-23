@@ -27,8 +27,14 @@ h4{
 
 /*3x6x3 ng-view*/
 
-.listings {
-  img:
+.listings section {
+  background-color: blue;
+}
+
+/*.listings img {
+  float: right;
+top: 50%;
+transform: translateY(-50%);*/
 }
 
 .cuisoptions{
@@ -47,7 +53,9 @@ img {
     border: 0;
 }
 
-
+.displayFood div{
+  display: inline-block;
+}
 
 /**************************
 media queries
@@ -67,7 +75,7 @@ media queries
 	.header{
 		height: 300px
 	}
-	
+
 }
 
 @media(max-width: 675px){
@@ -111,7 +119,7 @@ media queries
 @media(max-width: 480px){
 	.dineops{
 		margin:5% auto;
-		
+
 	}
 	.header{
 		height:200px;
@@ -139,23 +147,3 @@ text-align: center;
 font-size:5em;
   color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
