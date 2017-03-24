@@ -1,24 +1,26 @@
-
+*{
+	font-family: 'Montserrat', sans-serif;
+}
 .header{
 
-  background: url(../images/Header.jpg) no-repeat;
-  background-size: 100% ;
-  height: 520px;
-text-align: center;
+	background: url(../images/Header.jpg) no-repeat;
+	background-size: 100% ;
+	height: 520px;
+	text-align: center;
 }
 .header h1{
-  margin-top: 10%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-font-size:5em;
-  color: white;
+	margin-top: 10%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	font-size:5em;
+	color: white;
 }
 
 .dineops{
 	height: 50px;
-    margin: 11% auto;
-    background-color: #111;
-    color: green;
+	margin: 11% auto;
+	background-color: #111;
+	color: #91e1c5;
 }
 h4{
 	margin-top: 0;
@@ -27,34 +29,34 @@ h4{
 
 
 .listings section{
-  background-color: #fff;
-  box-shadow: 5px 5px 15px #111;
+	background-color: #fff;
+	box-shadow: 5px 5px 15px #111;
 }
 
 
 .cuisoptions{
 	width: 100%;
-    margin: 0% 25px;
+	margin: 0% 25px;
 }
 
 .listings img {
-    margin: 5% 10%;
-    width: 65%;
-    height: auto;
-    background-size: cover;
-    border-radius: 2%;
+	margin: 5% 10%;
+	width: 65%;
+	height: auto;
+	background-size: cover;
+	border-radius: 2%;
 }
 
 
 
 .displayFood div{
-  display: inline-block;
+	display: inline-block;
 }
 
 .restaurant{
-	    margin: 2% -10%;
-    font-size: 30px;
-    color: darkred;
+	margin: 2% -10%;
+	font-size: 30px;
+	color: darkred;
 }
 
 .map {
@@ -63,6 +65,83 @@ h4{
 	height: 100%;
 	
 }
+
+
+/*************************************
+dining columns
+********************************/
+
+.hazy{
+	height: 100%;
+	width: 80%;
+	background-color: #96e2c7;
+}
+
+.hazy h1{
+	text-align: center;
+}
+.hazy h4{
+	margin: 10px 11%;
+}
+.hazy p{
+	margin: 0 12%;
+}
+
+.hazy li{
+	margin: 0 4%;
+}
+
+.hopeful{
+	height: 100%;
+	width: 80%;
+	background-color: #75d7b4;
+}
+.hopeful h1{
+	text-align: center;
+}
+.hopeful h4{
+	margin: 10px 11%;
+}
+.hopeful p{
+	margin: 0 12%;
+}
+.hopeful li{
+	margin: 0 4%;
+}
+.anniversary{
+	height: 100%;
+	width: 80%;
+	background-color: #63d1aa;
+}
+.anniversary h1{
+	text-align: center;
+}
+
+.anniversary h4{
+	margin: 10px 11%;
+}
+.anniversary p{
+	margin: 0 12%;
+}
+.anniversary li{
+	margin: 0 4%;
+
+}
+
+.genButton{
+	background-color: #111;
+	border-style: none;
+	border-radius: 2px;
+	text-align: center;
+	margin: 0 40% 10%;
+	color: #91e1c5;
+}
+.dollar{
+	margin-top: 10%;
+}
+
+
+
 
 /**************************
 media queries
@@ -106,7 +185,7 @@ media queries
 	}
 	.header h1{
 		font-size: 3em;
-}
+	}
 	.header{
 		height: 200px;
 	}
