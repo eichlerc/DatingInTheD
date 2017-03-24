@@ -27,54 +27,48 @@ h4{
 
 
 .listings section{
-  background:url(../images/wood.jpg);
+  background-color: #fff;
+  box-shadow: 5px 5px 15px #111;
 }
 
-.listings p{
-	    margin: -2% 48%;
-    font-size: 20px;
-    color: white;
-}
-
-
-/*.listings img {
-  float: right;
-top: 50%;
-transform: translateY(-50%);*/
-}
 
 .cuisoptions{
 	width: 100%;
     margin: 0% 25px;
 }
 
-img {
-    vertical-align: middle;
-    width: 35%;
+.listings img {
+    margin: 5% 10%;
+    width: 65%;
     height: auto;
-    
-        margin: 3% 3%;
+    background-size: cover;
+    border-radius: 2%;
 }
 
-img {
-    border: 0;
-}
+
 
 .displayFood div{
   display: inline-block;
 }
 
-/*.map{
-	background: url(../images/map.jpg); 
-	background-attachment: center center;
-	height: 2000px ;
-}*/
+.restaurant{
+	    margin: 2% -10%;
+    font-size: 30px;
+    color: darkred;
+}
+
+.map {
+	background: url(../images/map.jpg);
+	width: 100%;
+	height: 100%;
+	
+}
 
 /**************************
 media queries
 ***************************/
 
-@media(max-width: 940px){
+/*@media(max-width: 940px){
 	.dineops{
 		margin:8% auto;
 	}
@@ -90,7 +84,7 @@ media queries
 	}
 
 }
-
+*/
 @media(max-width: 675px){
 	.dineops{
 		margin:6% auto;

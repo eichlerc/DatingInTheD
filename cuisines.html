@@ -4,15 +4,15 @@
 <div class ="listings" ng-repeat="foodstuff in food | filter: listItem">
 	<section>
 		<div class="row">
-			<div class="col-md-3">
-				<img src="{{ foodstuff.restaurant.featured_image}}" alt="">
+			<div class="col-md-6">
+				<img src="{{ foodstuff.restaurant.thumb}}" alt="">
 			</div>
-			<div class="col-md-2">
-				<p>RESTUARANT: {{ foodstuff.restaurant.name}}</p>
+			<div class="col-md-6">
+				<p class="restaurant"><!-- RESTUARANT: --> {{ foodstuff.restaurant.name}}</p>
 				<p id = "cuisine">CUISINES: {{ foodstuff.restaurant.cuisines}}</p>
 
-				<p>COST: {{ foodstuff.restaurant.currency}}</p>
-				<p>COST: {{ foodstuff.restaurant.price_range}}</p>
+				<p class="currency">COST: {{ foodstuff.restaurant.currency}}</p>
+				<p class="price-range">COST: {{ foodstuff.restaurant.price_range}}</p>
 			</div>
 
 
