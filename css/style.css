@@ -63,7 +63,7 @@ h4{
 	background: url(../images/map.jpg);
 	width: 100%;
 	height: 100%;
-	
+
 }
 
 
@@ -73,7 +73,7 @@ dining columns
 
 .hazy{
 	height: 100%;
-	width: 80%;
+	/*width: 80%;*/
 	background-color: #96e2c7;
 }
 
@@ -93,7 +93,7 @@ dining columns
 
 .hopeful{
 	height: 100%;
-	width: 80%;
+	/*width: 80%;*/
 	background-color: #75d7b4;
 }
 .hopeful h1{
@@ -110,7 +110,7 @@ dining columns
 }
 .anniversary{
 	height: 100%;
-	width: 80%;
+	/*width: 80%;*/
 	background-color: #63d1aa;
 }
 .anniversary h1{
@@ -137,7 +137,7 @@ dining columns
 	color: #91e1c5;
 }
 .dollar{
-	margin-top: 10%;
+	margin-top: 0;
 }
 
 
