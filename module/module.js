@@ -18,6 +18,14 @@ $routeProvider
 .when('/cuisines', {
   controller:'cuisCtrl',
   templateUrl: 'cuisines.html'
+})
+.when('/cuisines2', {
+  controller:'cuisCtrl',
+  templateUrl: 'cuisines2.html'
+})
+.when('/cuisines3', {
+  controller:'cuisCtrl',
+  templateUrl: 'cuisines3.html'
 });
 
 $locationProvider.hashPrefix('');
