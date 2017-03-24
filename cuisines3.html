@@ -1,7 +1,7 @@
 <br>
 <input type="text" ng-model = 'listItem' ng-model = 'price'>Filter By Cuisine</input>
 
-<div ng-show='foodstuff.restaurant.price_range == price[0]' class ="listings" ng-repeat="foodstuff in food | filter: listItem">
+<div ng-show='foodstuff.restaurant.price_range == price[2] ||foodstuff.restaurant.price_range == price[3] ' class ="listings" ng-repeat="foodstuff in food | filter: listItem">
 	<section>
 		<div class="row">
 			<div class="col-md-6">

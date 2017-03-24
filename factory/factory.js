@@ -11,7 +11,7 @@ return {
     function dates(){
       var places =  $http({
               method: "GET",
-              url: "https://developers.zomato.com/api/v2.1/search?entity_id=285&entity_type=city&sort=cost&order=asc"
+              url: "https://developers.zomato.com/api/v2.1/search?entity_id=285&entity_type=city"
 
 //              url: "https://developers.zomato.com/api/v2.1/cuisines?city_id=285",
 

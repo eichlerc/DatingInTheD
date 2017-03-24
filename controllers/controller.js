@@ -2,6 +2,7 @@ var app = angular.module('cheapDate');
 
 
 app.controller('cuisCtrl',function($scope, dateFactory){
+    $scope.price = [1,2,3,4];
   $scope.listItem = '';
   $scope.getlist = function(){
   console.log('hey');
