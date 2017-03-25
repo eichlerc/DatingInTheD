@@ -32,11 +32,11 @@ $locationProvider.hashPrefix('');
 
 });
 //cuisine directive setup below.
-	app.directive("cuisine", function() {
+	app.directive("naviBar", function() {
 
     return {
         restrict: "E",
-        templateUrl: "cuisines.html",
+        template: "<ul><li><a href=''>HOME</a></li><li><a href='' ng-click='ShowHide()'>ABOUT</a></li></ul>",
         replace: false
     }
 });

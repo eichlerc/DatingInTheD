@@ -2,16 +2,18 @@
 <html ng-app="cheapDate">
 <head>
 	<title>Food App</title>
-	
+
   <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900" rel="stylesheet">
 
 </head>
-<body>
+<body ng-controller="cuisCtrl">
 
 <div class="header">
+	<navi-bar></navi-bar>
+	 <div class="aboutShow"ng-show = "IsVisible">My DIV</div>
   <div class="dating"> DATING IN THE D
     <div class="dineops">
       <section class="blackBand">Dining Options</section>
@@ -20,7 +22,7 @@
 </div>
 
 
-<div class="row" ng-controller="cuisCtrl">
+<div class="row" >
   <div class="col-md-4 hazy">
   <h1 class="dollar">$</h1>
   <h1>OUTLOOK <br> HAZY</h1>
