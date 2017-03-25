@@ -1,6 +1,38 @@
 *{
 	font-family: 'Montserrat', sans-serif;
 }
+
+.test {
+
+}
+
+.navbar {
+padding: 0px ;
+list-style-type: none;
+position: fixed;
+z-index: 10;
+}
+
+.navbar li {
+	display: inline;
+	padding-right: 10px;
+}
+
+.navbar a {
+	color: white;
+	font-weight: 600;
+}
+/*
+.navBar li {
+	color: white;
+	font-weight:600;
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: yellow;
+}*/
+
 .header{
 
 	background: url(../images/Header.jpg) no-repeat;
