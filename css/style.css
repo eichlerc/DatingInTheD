@@ -16,24 +16,25 @@
 	color: white;
 }
 
-.dineops{
+/*.dineops{
 	/*height: 50px;
 	margin: 11% auto;*/
 	/*background-color: #111;*/
 	/*color: #91e1c5;*/
 	/*z-index: -1;*/
-}
+/*}*/
 .blackBand{
 	margin-top: 20%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 25px;
 	color: #fff;
 	background-color: #111;
+	padding:10px;
 }
 
 .row {
-     margin-right: 0px !important; 
-     margin-left: 0px !important; 
+     margin-right: 0px !important;
+     margin-left: 0px !important;
 }
 
 h4{
@@ -115,7 +116,12 @@ h4{
 /*************************************
 dining columns
 ********************************/
+.innerdiv{
+	width:65%;
+	margin: auto;
+	padding: 20px;
 
+}
 .hazy{
 	height: 100%;
 	/*width: 80%;*/
@@ -124,6 +130,7 @@ dining columns
 
 .hazy h1{
 	text-align: center;
+	font-weight: 700;
 }
 .hazy h4{
 	margin: 10px 11%;
@@ -138,10 +145,13 @@ dining columns
 
 .hopeful{
 	height: 100%;
+
 	/*width: 80%;*/
 	background-color: #75d7b4;
 }
 .hopeful h1{
+
+	font-weight: 700;
 	text-align: center;
 }
 .hopeful h4{
@@ -155,10 +165,12 @@ dining columns
 }
 .anniversary{
 	height: 100%;
+
 	/*width: 80%;*/
 	background-color: #63d1aa;
 }
 .anniversary h1{
+	font-weight: 700;
 	text-align: center;
 }
 
@@ -185,7 +197,11 @@ dining columns
 	margin-top: 0;
 }
 
-
+@media( max-width:760px){
+	.listings{
+		text-align: center;
+	}
+}
 
 
 /**************************

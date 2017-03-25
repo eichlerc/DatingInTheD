@@ -3,13 +3,15 @@
 <head>
 	<title>Food App</title>
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900" rel="stylesheet">
 
 </head>
+<!--Inserted cuisCtrl in the body Tag  -->
 <body ng-controller="cuisCtrl">
+
 
 <div class="header">
 	<navi-bar></navi-bar>
@@ -22,72 +24,84 @@
     </span>
 
 
-   </div>
-  <div class="dating"> DATING IN THE D
-    <div class="dineops">
-      <section class="blackBand">Dining Options</section>
-    </div>
-  </div>
-</div>
 
 
-<div class="row" >
-  <div class="col-md-4 hazy">
-  <h1 class="dollar">$</h1>
-  <h1>OUTLOOK <br> HAZY</h1>
-  <p>Good food doesn't have to come at a high price <br> Plus, time is money and <br> this date might be a waste of time</p>
 
-  <h4>Examples</h4>
-  <ul>
-  	<li>Tinder convo has been meh...</li>
-  	<li>You're hoping to bond over your love of saving money</li>
-  	<li>Pity date</li>
-  </ul>
-
-<a href="#/cuisines"><button class="genButton">Generate</button></a>
-
-	 </div>
-  <div class="col-md-4 hopeful">
-  <h1 class="dollar">$</h1>
-  <h1>HIGH <br> HOPES</h1>
-  <p>Good food doesn't have to come at a high price <br> Plus, time is money and <br> this date might be a waste of time</p>
-
-  <h4>Examples</h4>
-  <ul>
-  	<li>Tinder convo has been meh...</li>
-  	<li>You're hoping to bond over your love of saving money</li>
-  	<li>Pity date</li>
-  </ul>
-<a href="#/cuisines2"><button class="genButton">Generate</button></a>
-	</div>
-    <div class="col-md-4 anniversary">
-    <h1 class="dollar">$</h1>
-  <h1>Anniversary <br> Status</h1>
-  <p>Good food doesn't have to come at a high price <br> Plus, time is money and <br> this date might be a waste of time</p>
-
-  <h4>Examples</h4>
-  <ul>
-  	<li>Tinder convo has been meh...</li>
-  	<li>You're hoping to bond over your love of saving money</li>
-  	<li>Pity date</li>
-  </ul>
-  <a href="#/cuisines3"><button class="genButton">Generate</button></a>
+	<div class="header">
+		<!--na  -->
+		<navi-bar></navi-bar>
+		<div class="aboutShow" ng-show = "IsVisible">My DIV</div>
+		<div class="dating"> DATING IN THE D
+			<div class="dineops">
+				<section class="blackBand">Dining Options</section>
+			</div>
 		</div>
+	</div>
+
+
+
+	<div class="row" >
+		<div class="col-md-4 hazy">
+			<div class="innerdiv">
+				<h1 class="dollar">$</h1>
+				<h1>OUTLOOK <br> HAZY</h1>
+				<p>Good food doesn't have to come at a high price <br> Plus, time is money and <br> this date might be a waste of time</p>
+
+				<h4>Examples</h4>
+				<ul>
+					<li>Tinder convo has been meh...</li>
+					<li>You're hoping to bond over your love of saving money</li>
+					<li>Pity date</li>
+				</ul>
+
+				<a href="#/cuisines"><button class="genButton">Generate</button></a>
+			</div>
+		</div>
+		<div class="col-md-4 hopeful">
+<div class="innerdiv">
+			<h1 class="dollar">$</h1>
+			<h1>HIGH <br> HOPES</h1>
+			<p>Good food doesn't have to come at a high price <br> Plus, time is money and <br> this date might be a waste of time</p>
+
+			<h4>Examples</h4>
+			<ul>
+				<li>Tinder convo has been meh...</li>
+				<li>You're hoping to bond over your love of saving money</li>
+				<li>Pity date</li>
+			</ul>
+			<a href="#/cuisines2"><button class="genButton">Generate</button></a>
+		</div>
+	</div>
+		<div class="col-md-4 anniversary">
+			<div class="innerdiv">
+			<h1 class="dollar">$</h1>
+			<h1>ANNIVERSARY <br> STATUS</h1>
+			<p>Good food doesn't have to come at a high price <br> Plus, time is money and <br> this date might be a waste of time</p>
+
+			<h4>Examples</h4>
+			<ul>
+				<li>Tinder convo has been meh...</li>
+				<li>You're hoping to bond over your love of saving money</li>
+				<li>Pity date</li>
+			</ul>
+			<a href="#/cuisines3"><button class="genButton">Generate</button></a>
+		</div>
+	</div>
 		<div class="row map" class = "displayFood">
 
-		  <div  class="col-md-3"></div>
+			<div  class="col-md-3"></div>
 			<div class="col-md-6">
-		<!-- <a href="#/cuisines">Show the Cuisines</a> -->
+				<!-- <a href="#/cuisines">Show the Cuisines</a> -->
 				<ng-view></ng-view></div>
-			<div class="col-md-3"></div>
+				<div class="col-md-3"></div>
+			</div>
 		</div>
-</div>
 
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
-<script type="text/javascript" src="https://code.angularjs.org/1.6.3/angular-route.min.js"></script>
-<script type="text/javascript" src="module/module.js"></script>
-<script type="text/javascript" src= "controllers/controller.js"></script>
-<script type="text/javascript" src= "factory/factory.js"></script>
-</body>
-</html>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+		<script type="text/javascript" src="https://code.angularjs.org/1.6.3/angular-route.min.js"></script>
+		<script type="text/javascript" src="module/module.js"></script>
+		<script type="text/javascript" src= "controllers/controller.js"></script>
+		<script type="text/javascript" src= "factory/factory.js"></script>
+	</body>
+	</html>
