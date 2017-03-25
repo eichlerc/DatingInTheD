@@ -36,7 +36,7 @@ $locationProvider.hashPrefix('');
 
     return {
         restrict: "E",
-        template: "<ul class='navBar'><li><a href=''>HOME</a></li><li><a href='' ng-click='ShowHide()'>ABOUT</a></li></ul>",
+        template: "<ul class='navBar'><li><a href='index.html'>HOME</a></li><li><a href='' ng-click='ShowHide()'>ABOUT</a></li></ul>",
         replace: false
     }
 });
