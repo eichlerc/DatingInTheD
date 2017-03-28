@@ -1,23 +1,9 @@
 <br>
-<input type="text" ng-model = 'listItem' ng-model = 'price'>Filter By Cuisine</input>
+<input id="filterinput" placeholder="Filter By Cuisine or Restaurant Name" type="text" ng-model = 'listItem' ng-model = 'price'></input>
 
 <div ng-show='foodstuff.restaurant.price_range == price[0]' class ="listings" ng-repeat="foodstuff in food | filter: listItem">
-	<section>
-		<div class="row">
-			<div class="col-md-6">
-				<img src="{{ foodstuff.restaurant.thumb}}" alt="">
-			</div>
-			<div class="col-md-6">
-				<p class="restaurant"> {{ foodstuff.restaurant.name}}</p>
-				<p id = "cuisine">CUISINES: {{ foodstuff.restaurant.cuisines}}</p>
 
-				<p class="currency">COST: {{ foodstuff.restaurant.currency}}</p>
-				<p class="price-range">COST: {{ foodstuff.restaurant.price_range}}</p>
-			</div>
-
-
-		</div>
-	</section><br>
+<food-directive></food-directive>
 
 </div>
 

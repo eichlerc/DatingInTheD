@@ -6,14 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900" rel="stylesheet"> <!--Our font Montserrat is loaded here with a few different weights.  -->
+
 
 </head>
 <!--Inserted cuisCtrl in the body Tag  -->
 <body ng-controller="cuisCtrl">
 
 	 <div class="header">
-	 	<!--na  -->
 	 	<navi-bar></navi-bar>
 	 	<div class="aboutShow" ng-show = "IsVisible">
 
@@ -25,12 +25,15 @@
 
 	 		</span>
 	 		</div>
-	 		<div class="dating"> DATING IN THE D
+
+	 		<div class="dating">
+				<h1 id="detroit">DATING IN THE D	</h1>
+
 	 			<div class="dineops">
 	 				<section class="blackBand">Dining Options</section>
 	 			</div>
-	 		</div>
 	 	</div>
+	</div>
 
 
 
@@ -53,7 +56,7 @@
 	 		</div>
 	 		<div class="col-md-4 hopeful">
 	 			<div class="innerdiv">
-	 				<h1 class="dollar">$</h1>
+	 				<h1 class="dollar">$$</h1>
 	 				<h1>HIGH <br> HOPES</h1>
 	 				<p>Good food doesn't have to come at a high price <br> Plus, time is money and <br> this date might be a waste of time</p>
 
@@ -68,7 +71,7 @@
 	 		</div>
 	 		<div class="col-md-4 anniversary">
 	 			<div class="innerdiv">
-	 				<h1 class="dollar">$</h1>
+	 				<h1 class="dollar">$$$</h1>
 	 				<h1>ANNIVERSARY <br> STATUS</h1>
 	 				<p>Good food doesn't have to come at a high price <br> Plus, time is money and <br> this date might be a waste of time</p>
 
@@ -94,8 +97,15 @@
 
 	 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
 	 		<script type="text/javascript" src="https://code.angularjs.org/1.6.3/angular-route.min.js"></script>
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+			<script type="text/javascript" src= "plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+			<script type="text/javascript" src= "script.js"></script>
 	 		<script type="text/javascript" src="module/module.js"></script>
 	 		<script type="text/javascript" src= "controllers/controller.js"></script>
 	 		<script type="text/javascript" src= "factory/factory.js"></script>
+			<script type="text/javascript" src= "directives/fooddirective.js"></script>
+
+
 	 	</body>
 	 	</html>

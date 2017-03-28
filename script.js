@@ -2,21 +2,19 @@ $(document).ready( function(){
 
 
 
-$(function(){
-//     $('#inner-content-div').slimScroll({
-//         height: '50px'
-//     });
+    $('#inner-content-div').slimScroll({
+        height: '50px'
+    });
+
+
+
+
+// $('#slimtest2').slimScroll({
+//     position: 'left',
+//     height: '150px',
+//     railVisible: true,
+//     alwaysVisible: true
 // });
-//
-
-
-
-$('#slimtest2').slimScroll({
-    position: 'left',
-    height: '150px',
-    railVisible: true,
-    alwaysVisible: true
-});
 
 
 } );
