@@ -1,7 +1,7 @@
 	<section>
 		<div class="row">
 			<div class="col-md-6">
-				<img src="{{ foodstuff.restaurant.featured_image}}" alt="images/nophoto.jpg">
+				<img ng-src="{{ foodstuff.restaurant.featured_image || 'images/nophoto.jpg' }}">
 			</div>
       <div class="some-content-related-div">
 

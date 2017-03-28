@@ -7,8 +7,6 @@ $(document).ready( function(){
     });
 
 
-
-
 // $('#slimtest2').slimScroll({
 //     position: 'left',
 //     height: '150px',
