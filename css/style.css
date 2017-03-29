@@ -1,23 +1,15 @@
 body {
 	background-color: #ff6353;
 }
+*{
+	font-family: 'Montserrat', sans-serif;
+}
 
 
 #detroit {
 	/*margin-top: 0;*/
 	/*letter-spacing: 3vh;*/
-
-	text-align: center;
-
-
-}
-
-*{
-	font-family: 'Montserrat', sans-serif;
-}
-
-.test {
-
+text-align: center;
 }
 
 .navbar {
@@ -69,6 +61,11 @@ top: 0;
 	-o-background-size:cover !important;
 	background-size:cover !important;
 	background-position:left right !important;
+}
+
+.mobilePic{
+	display: none;
+
 }
 
 /*.header h1{
@@ -314,16 +311,39 @@ dining columns
 	padding: 10px;
 }
 
+
+/**************************
+media queries
+***************************/
+@media(max-width: 800px){
+	.pagePic{
+	margin: 0% auto;
+    display: block;
+    width: 80%;
+    
+	}
+}
+
+
+
 @media( max-width:760px){
 	.listings{
 		text-align: center;
 	}
 }
 
+@media( max-width:600px){
+	.mobilePic{
+visibility: visible;
+    display: block;
+    margin: 0 auto;
+	}
+	.pagePic{
+		display: none;
+	}
+}
 
-/**************************
-media queries
-***************************/
+
 
 /*@media(max-width: 940px){
 	.dineops{
