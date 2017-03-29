@@ -5,10 +5,16 @@ app.controller('cuisCtrl',function($scope, dateFactory){
     $scope.price = [1,2,3,4];
   $scope.listItem = '';
   $scope.getlist = function(){
-  console.log('hey');
+//  console.log('hey');
   dateFactory.dates().then(function successCallback(response) {
     $scope.food = dateFactory.datespot();
     console.log($scope.food);
+  }).then(function successCallback(response) {
+    $scope.food2 = dateFactory.datespot2();
+    console.log($scope.food2);
+  }).then(function successCallback(response) {
+    $scope.food3 = dateFactory.datespot3();
+    console.log($scope.food3);
   });
   // console.log($scope.food);
   }
