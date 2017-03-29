@@ -1,7 +1,7 @@
 <br>
 <input id="filterinput" placeholder="Filter By Cuisine or Restaurant Name" type="text" ng-model = 'listItem' ng-model = 'price'></input>
 
-<div ng-show='foodstuff.restaurant.price_range == price[1]' class ="listings" ng-repeat="foodstuff in food.concat(food2).concat(food3) | filter: listItem">
+<div ng-show='foodstuff.restaurant.price_range == price[1]' class ="listings" ng-repeat="foodstuff in food.concat(food2).concat(food3).concat(food4).concat(food5) | filter: listItem">
 	<food-directive></food-directive>
 
 
