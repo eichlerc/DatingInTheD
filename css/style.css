@@ -123,9 +123,11 @@ h4{
 .listings img {
 	margin: 5% 10%;
 	width: 65%;
+	object-fit: cover;
 	height: auto;
-	background-size: cover;
-	border-radius: 2%;
+	position: absolute;
+	clip: rect(8px,150px,129px,7px);
+		border-radius: 2%;
 }
 
 
@@ -206,8 +208,7 @@ h4{
 }
 
 .thefam {
-    width: 200px;
-    height: 200px;
+    width: 20%;
     background: blue;
     display: inline-block;
     margin: 5% 10%;
@@ -320,7 +321,7 @@ media queries
 	margin: 0% auto;
     display: block;
     width: 80%;
-    
+
 	}
 }
 
