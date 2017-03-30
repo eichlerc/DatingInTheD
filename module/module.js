@@ -5,9 +5,14 @@ var app = angular.module('cheapDate', ['ngRoute']);
 app.config(['$httpProvider', function ($httpProvider) {
     $httpProvider.defaults.headers.common = {
       "Accept": "application/json",
-    //  "user-key":  "6284e75678445df82c7e04438151187c"
-      "user-key":  "fd1e005e05d56aaca19b77f9469c04ae"
+
+     "user-key":  "6284e75678445df82c7e04438151187c"
+//      "user-key":  "fd1e005e05d56aaca19b77f9469c04ae"
+
+//      "user-key":"6c1bec50e9e4b589e8d7e78fabb38e89"
+
       };
+      // "user-key":  "6284e75678445df82c7e04438151187c"
 
 		}]);
 

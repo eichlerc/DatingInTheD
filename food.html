@@ -17,12 +17,12 @@
 			<div class="col-md-6">
 
 				<p class="restaurant"> {{ foodstuff.restaurant.name}}</p>
-				<p>LOCATION: {{ foodstuff.restaurant.location.address}} </p>
-				<p id = "cuisine">CUISINES: {{ foodstuff.restaurant.cuisines}}</p>
+				<p class="location">LOCATION: {{ foodstuff.restaurant.location.address}} </p>
+				<p class = "cuisine">CUISINES: {{ foodstuff.restaurant.cuisines}}</p>
 				<p class="price-range">COST CATEGORY: {{ foodstuff.restaurant.price_range}}</p>
 				<p class="currency">AVERAGE COST FOR TWO: {{ foodstuff.restaurant.average_cost_for_two}}</p>
-				<p>AVERAGE CUSTOMER RATING: {{ foodstuff.restaurant.user_rating.aggregate_rating}} - {{ foodstuff.restaurant.user_rating.rating_text}} </p>
-				<p>FOR REVIEWS AND MORE INFO HEAD OVER TO <a href="{{foodstuff.restaurant.url}}">ZOMATO</a></p>
+				<p class="rating">AVERAGE CUSTOMER RATING: {{ foodstuff.restaurant.user_rating.aggregate_rating}} - {{ foodstuff.restaurant.user_rating.rating_text}} </p>
+				<p class ="url">FOR REVIEWS AND MORE INFO HEAD OVER TO <a href="{{foodstuff.restaurant.url}}">ZOMATO</a></p>
 			</div>
 
     </div>

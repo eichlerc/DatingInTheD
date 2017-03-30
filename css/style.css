@@ -48,10 +48,6 @@ top: 0;
 	background-color: yellow;
 }*/
 
-.thefam {
-
-}
-
 .header{
 
 	background: url(../images/Header.jpg) no-repeat;
@@ -115,6 +111,8 @@ h4{
 }
 
 
+
+
 .cuisoptions{
 	/*width: 100%;*/
 	/*margin: 0% 25px;*/
@@ -123,18 +121,23 @@ h4{
 .listings img {
 	margin: 5% 10%;
 	width: 65%;
+	object-fit: cover;
 	height: auto;
-	background-size: cover;
-	border-radius: 2%;
+	clip: rect(8px,150px,129px,7px);
+		border-radius: 2%;
 }
 
+.listings p {
+	color: grey;
+	font-weight: 300;
 
+}
 
 .displayFood div{
 	display: inline-block;
 }
 
-.restaurant{
+#restaurant{
 	margin: 2%;
 	font-size: 30px;
 	color: darkred;
@@ -156,6 +159,12 @@ h4{
 	/*margin-top: 10%;*/
 
 }
+.thefam {
+    width: 20%;
+    background: blue;
+    display: inline-block;
+    margin: 5% 10%;
+}
 
 .aboutShow {
     background-color: white;
@@ -165,13 +174,26 @@ h4{
     margin: 1% 25%;
     box-shadow: 5px 5px 20px #111;
     border-radius: 10px;
-    height: 100%;
+    height: auto;
     width: 50%;
 		animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
+    }
+.cortney,
+.peter,
+.chelsey,
+.kofi{
+	height: auto;
+	width: 100%;
 }
+
+.icons{
+	text-align: center;
+}
+
+    
 @keyframes fadein {
     from {
         opacity:0;
@@ -205,13 +227,7 @@ h4{
     }
 }
 
-.thefam {
-    width: 200px;
-    height: 200px;
-    background: blue;
-    display: inline-block;
-    margin: 5% 10%;
-}
+
 
 
 
@@ -320,7 +336,7 @@ media queries
 	margin: 0% auto;
     display: block;
     width: 80%;
-    
+
 	}
 }
 
@@ -341,6 +357,15 @@ visibility: visible;
 	.pagePic{
 		display: none;
 	}
+	/*.listings section{
+		background-color: #fff;
+		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+		/*width: 50%*/
+
+	
+
+
+
 }
 
 
