@@ -48,10 +48,6 @@ top: 0;
 	background-color: yellow;
 }*/
 
-.thefam {
-
-}
-
 .header{
 
 	background: url(../images/Header.jpg) no-repeat;
@@ -163,6 +159,12 @@ h4{
 	/*margin-top: 10%;*/
 
 }
+.thefam {
+    width: 20%;
+    background: blue;
+    display: inline-block;
+    margin: 5% 10%;
+}
 
 .aboutShow {
     background-color: white;
@@ -172,13 +174,26 @@ h4{
     margin: 1% 25%;
     box-shadow: 5px 5px 20px #111;
     border-radius: 10px;
-    height: 100%;
+    height: auto;
     width: 50%;
 		animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
+    }
+.cortney,
+.peter,
+.chelsey,
+.kofi{
+	height: auto;
+	width: 100%;
 }
+
+.icons{
+	text-align: center;
+}
+
+    
 @keyframes fadein {
     from {
         opacity:0;
@@ -212,12 +227,7 @@ h4{
     }
 }
 
-.thefam {
-    width: 20%;
-    background: blue;
-    display: inline-block;
-    margin: 5% 10%;
-}
+
 
 
 
