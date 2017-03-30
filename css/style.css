@@ -158,6 +158,12 @@ h4{
 	/*margin-top: 10%;*/
 
 }
+.thefam {
+    width: 20%;
+    /*background: blue;*/
+    display: inline-block;
+    margin: 5% 10%;
+}
 
 .aboutShow {
     background-color: white;
@@ -216,12 +222,7 @@ h4{
     }
 }
 
-.thefam {
-    width: 20%;
-    background: blue;
-    display: inline-block;
-    margin: 5% 10%;
-}
+
 
 
 
