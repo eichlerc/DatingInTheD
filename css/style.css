@@ -163,10 +163,9 @@ h4{
 
 }
 .thefam {
-    width: 20%;
-    background: blue;
+    width: 37%;
     display: inline-block;
-    margin: 5% 10%;
+    margin: 5% 6%;
 }
 
 .aboutShow {
@@ -174,29 +173,38 @@ h4{
     background-size: 100% 100%;
     z-index: 1000;
     position: absolute;
-    margin: 1% 25%;
+    margin: 1% 20%;
     box-shadow: 5px 5px 20px #111;
     border-radius: 10px;
     height: auto;
-    width: 50%;
-		animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
-    }
+    width: 60%;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+}
 .cortney,
 .peter,
 .chelsey,
 .kofi{
 	height: auto;
 	width: 100%;
+	border-radius: 100%;
 }
 
 .icons{
 	text-align: center;
 }
 
+<<<<<<< HEAD
 
+=======
+.faveFood{
+	margin-top: -3%;
+}
+
+    
+>>>>>>> 6d6654337ca7806e247aad84c11d050783a818cd
 @keyframes fadein {
     from {
         opacity:0;
