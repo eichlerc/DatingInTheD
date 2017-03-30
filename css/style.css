@@ -115,6 +115,8 @@ h4{
 }
 
 
+
+
 .cuisoptions{
 	/*width: 100%;*/
 	/*margin: 0% 25px;*/
@@ -125,18 +127,21 @@ h4{
 	width: 65%;
 	object-fit: cover;
 	height: auto;
-	position: absolute;
 	clip: rect(8px,150px,129px,7px);
 		border-radius: 2%;
 }
 
+.listings p {
+	color: grey;
+	font-weight: 300;
 
+}
 
 .displayFood div{
 	display: inline-block;
 }
 
-.restaurant{
+#restaurant{
 	margin: 2%;
 	font-size: 30px;
 	color: darkred;
@@ -342,6 +347,15 @@ visibility: visible;
 	.pagePic{
 		display: none;
 	}
+	/*.listings section{
+		background-color: #fff;
+		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+		/*width: 50%*/
+
+	
+
+
+
 }
 
 
