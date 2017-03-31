@@ -37,12 +37,16 @@ $routeProvider
 $locationProvider.hashPrefix('');
 
 });
-//cuisine directive setup below.
-	app.directive("naviBar", function() {
 
-    return {
-        restrict: "E",
-        template: "<ul class='navbar'><li><a href='index.html'>HOME</a></li><li><a href='' ng-click='ShowHide()'>ABOUT</a></li></ul>",
-        replace: false
-    }
-});
+// app.config(function($sceProvider) {
+//   // Completely disable SCE.  For demonstration purposes only!
+//   // Do not use in new projects or libraries.
+//   $sceProvider.enabled(false);
+//
+// });
+//
+// app.filter('unsafe', function($sce){
+// return function(val) {
+//   return $sce.trustAsHtml(val);
+// }
+// });

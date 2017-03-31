@@ -1,12 +1,13 @@
 var app = angular.module('cheapDate');
 
 
-app.controller('cuisCtrl',function($scope, dateFactory){
+app.controller('cuisCtrl',function($scope, $sce, dateFactory){
     $scope.price = [1,2,3,4];
   $scope.listItem = '';
   $scope.getlist = function(){
 //  console.log('hey');
   dateFactory.dates().then(function successCallback(response) {
+    $scope.link = "https://www.google.com/maps/embed/v1/view?key=AIzaSyChge9OkndIfptAe-rCogLee3BEzfIJcGM&zoom=18&center=";
     $scope.food = dateFactory.datespot();
     console.log($scope.food);
 //   }).then(function successCallback(response) {
@@ -30,4 +31,12 @@ app.controller('cuisCtrl',function($scope, dateFactory){
                //If DIV is visible it will be hidden and vice versa.
                $scope.IsVisible = $scope.IsVisible ? false : true;
              }
+
+
+});
+
+app.filter('unsafe', function($sce){
+  return function(val) {
+    return $sce.trustAsResourceUrl($sce.trustAsHtml(val).toString());
+  };
 });
