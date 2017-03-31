@@ -12,41 +12,40 @@
 </head>
 <!--Inserted cuisCtrl in the body Tag  -->
 <body ng-controller="cuisCtrl">
-
 	<navi-bar></navi-bar>
 
 	 <div class="header">
 	 	<div class="aboutShow" ng-show = "IsVisible">
 
-
+	 		
 
 
 	 		<span class="thefam icons"><img class="cortney" src="../images/Cortney.gif">
 
 	 			<span class="icons">
-	 			<a href="https://github.com/Cortneyw2011"  target="_blank">
+	 			<a href="https://github.com/Cortneyw2011">
 	 			<i class="fa fa-github fa-2x cortlink" aria-hidden="true"></i>
 	 			</a>
 
-	 			<a href="https://www.linkedin.com/in/cortney-wilson-78467527/"  target="_blank">
+	 			<a href="https://www.linkedin.com/in/cortney-wilson-78467527/">
 	 			<i class="fa fa-linkedin fa-2x cortlink" aria-hidden="true"></i>
 	 			</a>
 	 			</span>
-
+	 		
 
 
 	 		<p class="aboutGang"><strong>Cortney Wilson</strong></p>
 	 		<p class="aboutGang faveFood"><strong>Favorite Food:</strong> Mexican</p>
 	 		</span>
-
+			
 
 			<span class="thefam icons"><img class="peter" src="../images/Peter.gif">
 				<span class="icons">
-				<a href="https://github.com/petekal1323"  target="_blank">
+				<a href="https://github.com/petekal1323">
 				<i class="fa fa-github fa-2x petelink" aria-hidden="true"></i>
 				</a>
 
-				<a href="https://www.linkedin.com/in/peter-kalinowski-6a9808a2/"  target="_blank">
+				<a href="https://www.linkedin.com/in/peter-kalinowski-6a9808a2/">
 				<i class="fa fa-linkedin fa-2x petelink" aria-hidden="true"></i>
 				</a>
 				</span>
@@ -55,15 +54,15 @@
 			<p class="aboutGang"><strong>Peter Kalinowski</strong></p>
 			<p class="aboutGang faveFood"><strong>Favorite Food:</strong>BBQ</p>
 			</span>
-
+			
 
 			<span class="thefam icons"><img class="chelsey" src="../images/Chelsey.gif">
 			<span class="icons">
-			<a href="https://github.com/eichlerc" target="_blank">>
+			<a href="https://github.com/eichlerc">
 			<i class="fa fa-github fa-2x chelslink" aria-hidden="true"></i>
 			</a>
 
-			<a href="https://www.linkedin.com/in/chelsey-eichler-70535762/"  target="_blank">
+			<a href="https://www.linkedin.com/in/chelsey-eichler-70535762/">
 			<i class="fa fa-linkedin fa-2x chelslink" aria-hidden="true"></i>
 			</a>
 			</span>
@@ -71,15 +70,15 @@
 
 			<p class="aboutGang"><strong>Chelsey Eichler</strong></p>
 			<p class="aboutGang faveFood"><strong>Favorite Food:</strong> Sushi</p>
-
+			
 			</span>
 			<span class="thefam icons">
 				<span class="icons">
-				<a href="https://github.com/kyamoah7"  target="_blank">
+				<a href="https://github.com/kyamoah7">
 				<i class="fa fa-github fa-2x kofilink" aria-hidden="true"></i>
 				</a>
 
-				<a href="https://www.linkedin.com/in/kofi-yamoah-692a4513/"  target="_blank">
+				<a href="https://www.linkedin.com/in/kofi-yamoah-692a4513/">
 				<i class="fa fa-linkedin fa-2x kofilink" aria-hidden="true"></i>
 				</a>
 				</span>
@@ -87,7 +86,7 @@
 				<p class="aboutGang"><strong> Kofi Yamoah</strong></p>
 				<p class="aboutGang faveFood"><strong>Favorite Food:</strong> Middle Eastern</p>
 			</span>
-
+	 		
 
 
 	 		</div>
@@ -96,7 +95,7 @@
 				<h1	class="img-responsive" id="detroit"><br/>
 					<img class="pagePic" src="../images/detroit.png">
 					<img class="mobilePic" src="../images/detroitmobile.png">
-					<p>Welcome to Dating in the D. Your guide to </p>
+					<p>Welcome to Dating in the D.</p>
 
 				</h1>
 
@@ -158,7 +157,7 @@
 	 		<div class="row map" class = "displayFood">
 
 	 			<div  class="col-md-3"></div>
-	 			<div class="col-md-6">
+	 			<div id="show" class="col-md-6">
 	 				<!-- <a href="#/cuisines">Show the Cuisines</a> -->
 	 				<ng-view></ng-view></div>
 	 				<div class="col-md-3"></div>
@@ -169,7 +168,7 @@
 	 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
 	 		<script type="text/javascript" src="https://code.angularjs.org/1.6.3/angular-route.min.js"></script>
 			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-			<script type="text/javascript" src= "plugins/slimscroll/jquery.slimscroll.min.js"></script>
+			
 
 			<script type="text/javascript" src= "script.js"></script>
 	 		<script type="text/javascript" src="module/module.js"></script>

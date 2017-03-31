@@ -1,18 +1,13 @@
 $(document).ready( function(){
-
-
-
-    $('#inner-content-div').slimScroll({
-        height: '50px'
-    });
-
-
-// $('#slimtest2').slimScroll({
-//     position: 'left',
-//     height: '150px',
-//     railVisible: true,
-//     alwaysVisible: true
-// });
-
+	
+scroll1();
 
 } );
+
+function scroll1(){
+$(".genButton").click(function(){
+		$("body").animate({
+			scrollTop: $("#show").offset().top
+		},2500);
+	})
+}
