@@ -28,6 +28,7 @@ function scroll2(){
 	})
 
 
+
 };
 
 
@@ -46,4 +47,5 @@ function headlink(){
 		},2000);
 		})
 	
+
 };
