@@ -1,7 +1,6 @@
 body {
 	background-color: #ff6353;
 }
-
 *{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -10,20 +9,18 @@ body {
 #detroit {
 	/*margin-top: 0;*/
 	/*letter-spacing: 3vh;*/
-text-align: center;
+	text-align: center;
 }
 
 .navbar {
-padding: 10px ;
-list-style-type: none;
-position: fixed;
-width: 100%;
-height: 20px;
-z-index: 10;
-/*border: white 1px solid;
-border-radius: 0px;*/
-top: 0;
-background-color: #ff6353;
+	padding: 10px ;
+	list-style-type: none;
+	position: fixed;
+	height: 20px;
+	z-index: 10;
+	border: white 1px solid;
+	border-radius: 0px;
+	top: 0;
 }
 
 .navbar li {
@@ -49,35 +46,35 @@ background-color: #ff6353;
 	padding: 10px;
 	margin-top: 10px;
 	background-color: yellow;
-}*/
+	}*/
 
-.header{
+	.header{
 
-	background: url(../images/Header.jpg) no-repeat;
-	background-repeat:no-repeat !important;
-	-webkit-background-size:cover !important;
-	-moz-background-size:cover !important;
-	-o-background-size:cover !important;
-	background-size:cover !important;
-	background-position:left right !important;
-}
+		background: url(../images/Header.jpg) no-repeat;
+		background-repeat:no-repeat !important;
+		-webkit-background-size:cover !important;
+		-moz-background-size:cover !important;
+		-o-background-size:cover !important;
+		background-size:cover !important;
+		background-position:left right !important;
+	}
 
-.mobilePic{
-	display: none;
+	.mobilePic{
+		display: none;
 
-}
+	}
 
 /*.header h1{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 	font-size:5em;
 	color: white;
-}*/
+	}*/
 
 /*#detroit {
 	display: block;
 	margin: 10px auto 0 auto;
-}*/
+	}*/
 
 /*.dineops{
 height: 50px;
@@ -97,8 +94,8 @@ z-index: -1;
 }
 
 .row {
-     margin-right: 0px !important;
-     margin-left: 0px !important;
+	margin-right: 0px !important;
+	margin-left: 0px !important;
 }
 
 h4{
@@ -127,7 +124,7 @@ h4{
 	object-fit: cover;
 	height: auto;
 	clip: rect(8px,150px,129px,7px);
-		border-radius: 2%;
+	border-radius: 2%;
 }
 
 .listings p {
@@ -163,25 +160,25 @@ h4{
 
 }
 .thefam {
-    width: 37%;
-    display: inline-block;
-    margin: 5% 6%;
+	width: 37%;
+	display: inline-block;
+	margin: 5% 6%;
 }
 
 .aboutShow {
-    background-color: white;
-    background-size: 100% 100%;
-    z-index: 1000;
-    position: absolute;
-    margin: 1% 20%;
-    box-shadow: 5px 5px 20px #111;
-    border-radius: 10px;
-    height: auto;
-    width: 60%;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -webkit-animation: fadein 2s;
-    -o-animation: fadein 2s;
+	background-color: white;
+	background-size: 100% 100%;
+	z-index: 1000;
+	position: absolute;
+	margin: 1% 20%;
+	box-shadow: 5px 5px 20px #111;
+	border-radius: 10px;
+	height: auto;
+	width: 60%;
+	animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+	-o-animation: fadein 2s;
 }
 .cortney,
 .peter,
@@ -196,46 +193,42 @@ h4{
 	text-align: center;
 }
 
-<<<<<<< HEAD
-
-=======
 .faveFood{
 	margin-top: -3%;
 }
 
-    
->>>>>>> 6d6654337ca7806e247aad84c11d050783a818cd
+
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
 @-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
 @-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity:0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 
@@ -344,9 +337,9 @@ media queries
 ***************************/
 @media(max-width: 800px){
 	.pagePic{
-	margin: 0% auto;
-    display: block;
-    width: 80%;
+		margin: 0% auto;
+		display: block;
+		width: 80%;
 
 	}
 }
@@ -361,9 +354,9 @@ media queries
 
 @media( max-width:600px){
 	.mobilePic{
-visibility: visible;
-    display: block;
-    margin: 0 auto;
+		visibility: visible;
+		display: block;
+		margin: 0 auto;
 	}
 	.pagePic{
 		display: none;
@@ -372,98 +365,3 @@ visibility: visible;
 		background-color: #fff;
 		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 		/*width: 50%*/
-
-
-
-
-
-}
-
-
-
-/*@media(max-width: 940px){
-	.dineops{
-		margin:8% auto;
-	}
-	.cuisoptions{
-		width: 100%;
-            margin: 0 auto;
-	}
-	img{
-		width: 40%;
-	}
-	.header{
-		height: 300px
-	}
-
-}
-*/
-/*@media(max-width: 675px){
-	.dineops{
-		margin:6% auto;
-	}
-	img{
-		width: 40%;
-	}
-	.header{
-		height: 300px;
-	}
-}
-
-@media(max-width: 570px){
-	.dineops{
-		margin:5% auto;
-	}
-	img{
-		width: 50%;
-	}
-	.header h1{
-		font-size: 3em;
-	}
-	.header{
-		height: 200px;
-	}*/
-
-/*@media(max-width: 620px){
-	.dineops{
-		margin:6.5% auto;
-	}
-	.header{
-		height:200px;
-	}
-	.header h1{
-		font-size: 4em;
-	}
-}
-
-@media(max-width: 480px){
-	.dineops{
-		margin:5% auto;
-
-	}
-	.header{
-		height:200px;
-	}
-	.header h1{
-		font-size: 3em;
-	}
-	h4{
-		padding-top: 1%;
-	}
-}
-*/
-
-/*.header{
-
-  background: url(../images/Header.jpg) no-repeat;
-  background-size: 100% ;
-  height: 520px;
-text-align: center;
-}
-.header h1{
-  margin-top: 10%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-font-size:5em;
-  color: white;
-}
