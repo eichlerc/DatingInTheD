@@ -14,7 +14,7 @@ return {
 
     return {
         restrict: "E",
-        template: "<ul class='navbar'><li><a href='index.html'>HOME</a></li><li><a href='' ng-click='ShowHide()'>ABOUT</a></li></ul>",
+        template: "<ul class='navbar'><li><a href='index.html'>HOME</a></li><li><a href='' ng-click='ShowHide()'>THE TEAM</a></li></ul>",
         replace: false
     };
 
