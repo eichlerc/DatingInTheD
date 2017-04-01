@@ -47,4 +47,3 @@ function btnHideIt(){
 		$(".btnHit").hide();
 	})
 };
-

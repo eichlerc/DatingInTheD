@@ -37,16 +37,3 @@ $routeProvider
 $locationProvider.hashPrefix('');
 
 });
-
-// app.config(function($sceProvider) {
-//   // Completely disable SCE.  For demonstration purposes only!
-//   // Do not use in new projects or libraries.
-//   $sceProvider.enabled(false);
-//
-// });
-//
-// app.filter('unsafe', function($sce){
-// return function(val) {
-//   return $sce.trustAsHtml(val);
-// }
-// });
