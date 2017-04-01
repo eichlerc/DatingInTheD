@@ -393,32 +393,6 @@ dining columns
 
 
 
-
-.backtotop a{
-	font-size: 18px;
-	color: #fff;
-}
-
-
-	.backToTopLink{
-		margin: -15% -15%;
-		font-size: 17px;
-		color: #fff;
-
-	}
-
-
-	.btnHit {
-    position: fixed;
-    bottom: 10%;
-    right: 10%;
-    background-color: black;
-    color: salmon;
-    border: none;
-    border-radius: 2px;
-}
-
-
 /**************************
 media queries
 ***************************/
