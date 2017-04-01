@@ -42,6 +42,11 @@ app.controller('cuisCtrl',function($scope, $sce, dateFactory){
                else
                  $scope.className = "maps";
              };
+
+             $scope.modalShown = false;
+             $scope.toggleModal = function() {
+               $scope.modalShown = !$scope.modalShown;
+             };
   });
 
 
