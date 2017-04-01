@@ -3,14 +3,10 @@ $(document).ready( function(){
 $(".btnHit").hide();
 	scroll1();
 	scroll2();
-	
 	btnhide();
 	headlink();
-	
-
-
-
-} );
+	btnHideIt();
+});
 
 function scroll1(){
 	$(".genButton").click(function(){
@@ -26,9 +22,6 @@ function scroll2(){
 			scrollTop: $(".dineops").offset().top
 		},2000);
 	})
-
-
-
 };
 
 
@@ -46,6 +39,12 @@ function headlink(){
 			scrollTop: $(".header").offset().top
 		},2000);
 		})
-	
-
 };
+
+
+function btnHideIt(){
+	$(".btnHit").click(function(){
+		$(".btnHit").hide();
+	})
+};
+
