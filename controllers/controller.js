@@ -2,12 +2,13 @@ var app = angular.module('cheapDate');
 
 
 app.controller('cuisCtrl',function($scope, $sce, dateFactory){
-    $scope.price = [1,2,3,4];
+//the link below is related to the google maps API.
+  $scope.link = "https://www.google.com/maps/embed/v1/view?key=AIzaSyChge9OkndIfptAe-rCogLee3BEzfIJcGM&zoom=18&center=";
+  $scope.price = [1,2,3,4];
   $scope.listItem = '';
   $scope.getlist = function(){
 //  console.log('hey');
   dateFactory.dates().then(function successCallback(response) {
-    $scope.link = "https://www.google.com/maps/embed/v1/view?key=AIzaSyChge9OkndIfptAe-rCogLee3BEzfIJcGM&zoom=18&center=";
     $scope.food = dateFactory.datespot();
     console.log($scope.food);
 //   }).then(function successCallback(response) {
@@ -26,12 +27,14 @@ app.controller('cuisCtrl',function($scope, $sce, dateFactory){
 
   }
     $scope.getlist();
+
+//the about page. show hide function for the div.
     $scope.IsVisible = false;
            $scope.ShowHide = function () {
                //If DIV is visible it will be hidden and vice versa.
                $scope.IsVisible = $scope.IsVisible ? false : true;
              }
-
+//below is for the maps.
              $scope.className = "maps";
              $scope.changeClass = function(){
                if ($scope.className === "maps")
@@ -39,7 +42,12 @@ app.controller('cuisCtrl',function($scope, $sce, dateFactory){
                else
                  $scope.className = "maps";
              };
-           });
+
+             $scope.modalShown = false;
+             $scope.toggleModal = function() {
+               $scope.modalShown = !$scope.modalShown;
+             };
+  });
 
 
 

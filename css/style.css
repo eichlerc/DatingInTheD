@@ -1,3 +1,47 @@
+.ng-modal-overlay {
+  /* A dark translucent div that covers the whole screen */
+  position:absolute;
+  z-index:9999;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:#000000;
+  opacity: 0.8;
+}
+.ng-modal-dialog {
+  /* A centered div above the overlay with a box shadow. */
+  z-index:10000;
+  position: absolute;
+  width: 50%; /* Default */
+
+  /* Center the dialog */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+
+  background-color: #fff;
+  box-shadow: 4px 4px 80px #000;
+}
+.ng-modal-dialog-content {
+  padding:10px;
+  text-align: left;
+}
+.ng-modal-close {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 120%;
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'arial', 'sans-serif';
+}
+
+/**Testing**/
 body {
 	background-color: #ff6353;
 }
@@ -12,12 +56,6 @@ body {
 .showmap{
 	display: block;
 
-}
-
-#detroit {
-	/*margin-top: 0;*/
-	/*letter-spacing: 3vh;*/
-	text-align: center;
 }
 
 .navbar {
@@ -47,16 +85,6 @@ body {
 	color: #96e2c7;
 
 }
-/*
-.navBar li {
-	color: white;
-	font-weight:600;
-	list-style: none;
-	display: inline;
-	padding: 10px;
-	margin-top: 10px;
-	background-color: yellow;
-	}*/
 
 	.header{
 
@@ -74,25 +102,6 @@ body {
 
 	}
 
-/*.header h1{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 900;
-	font-size:5em;
-	color: white;
-	}*/
-
-/*#detroit {
-	display: block;
-	margin: 10px auto 0 auto;
-	}*/
-
-/*.dineops{
-height: 50px;
-	margin: 11% auto;
-background-color: #111;
-color: #91e1c5;
-z-index: -1;
-}*/
 
 .blackBand{
 	margin-top: 20%;
@@ -107,26 +116,11 @@ z-index: -1;
 	margin-right: 0px !important;
 	margin-left: 0px !important;
 }
-
+/*examples text*/
 h4{
 	margin-top: 0;
 	padding: 1%;
 }
-
-
-/*.listing img {
-background-repeat:no-repeat !important;
--webkit-background-size:cover !important;
--moz-background-size:cover !important;
--o-background-size:cover !important;
-background-size:cover !important;
-background-position:left right !important;
-}*/
-/*
-
-
-}*/
-
 
 .displayFood div{
 	display: inline-block;
@@ -161,7 +155,7 @@ background-position:left right !important;
 	left: 0
 
 }
-
+/*Name of restaurant*/
 .restaurant{
 	margin: 2%;
 	font-size: 30px;
@@ -169,6 +163,7 @@ background-position:left right !important;
 	font-weight: 600;
 }
 
+/*learn more button*/
 .listings button {
 	width: 60%;
 	display: block;
@@ -178,8 +173,8 @@ background-position:left right !important;
 	background-color: #eae8e7;
 	border: none;
 	padding-top: 2%;
-
 }
+
 .listings button:hover {
 	width: 60%;
 	display: block;
@@ -191,6 +186,7 @@ background-position:left right !important;
 	padding-top: 2%;
 }
 
+/*map background*/
 .map {
 	background: url(../images/map6.jpg);
 	width: 100%;
@@ -198,6 +194,7 @@ background-position:left right !important;
 
 }
 
+/*text in header Dining options and description*/
 .dating{
 	font-size: 3vh;
 	/*padding-top: 3vh;*/
@@ -207,6 +204,8 @@ background-position:left right !important;
 	/*margin-top: 10%;*/
 
 }
+
+/*each span in about*/
 .thefam {
 	width: 37%;
 	display: inline-block;
@@ -228,6 +227,8 @@ background-position:left right !important;
 	-webkit-animation: fadein 2s;
 	-o-animation: fadein 2s;
 }
+
+/*circle pictures*/
 .cortney,
 .peter,
 .chelsey,
@@ -295,6 +296,7 @@ dining columns
 	padding: 20px;
 
 }
+/*Cheap column*/
 .hazy{
 	height: 100%;
 	/*width: 80%;*/
@@ -316,6 +318,7 @@ dining columns
 	margin: 0 4%;
 }
 
+/*second column*/
 .hopeful{
 	height: 100%;
 
@@ -336,6 +339,8 @@ dining columns
 .hopeful li{
 	margin: 0 4%;
 }
+
+/*third column*/
 .anniversary{
 	height: 100%;
 
@@ -358,6 +363,7 @@ dining columns
 
 }
 
+/*generate dining options*/
 .genButton{
 	background-color: #111;
 	border-style: none;
@@ -375,6 +381,7 @@ dining columns
 	margin-top: 0;
 }
 
+/*filter input box*/
 #filterinput {
 	width: 300px;
 	border: none;
@@ -383,6 +390,7 @@ dining columns
 	font-weight: 300;
 	padding: 10px;
 }
+
 
 
 

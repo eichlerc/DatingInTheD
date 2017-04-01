@@ -14,14 +14,21 @@
 <body ng-controller="cuisCtrl">
 	<navi-bar></navi-bar>
 
+
 	<div class="header">
 		<div class="aboutShow" ng-show = "IsVisible">
 
 
 
 
+	 	<!-- <div class="aboutShow" ng-show = "IsVisible"> -->
+		<!-- <button >Open Modal Dialog</button> -->
+	  <modal-dialog show='modalShown' width='400px' height='60%'>
+
+
 			<span class="thefam icons"><img class="cortney" src="../images/Cortney.gif">
 				<span class="icons">
+
 					<a href="https://github.com/Cortneyw2011">
 						<i class="fa fa-github fa-2x cortlink" aria-hidden="true"></i>
 					</a>
@@ -33,6 +40,7 @@
 
 
 
+
 				<p class="aboutGang"><strong>Cortney Wilson</strong></p>
 				<p class="aboutGang faveFood"><strong>Role: </strong>js wizard & styles</p>
 				<p class="aboutGang faveFood"><strong>Favorite Food:</strong> Mexican</p>
@@ -41,6 +49,7 @@
 
 			<span class="thefam icons"><img class="peter" src="./images/Peter.gif">
 				<span class="icons">
+
 					<a href="https://github.com/petekal1323">
 						<i class="fa fa-github fa-2x petelink" aria-hidden="true"></i>
 					</a>
@@ -48,6 +57,7 @@
 					<a href="https://www.linkedin.com/in/peter-kalinowski-6a9808a2/">
 						<i class="fa fa-linkedin fa-2x petelink" aria-hidden="true"></i>
 					</a>
+
 				</span>
 
 
@@ -58,6 +68,7 @@
 
 
 			<span class="thefam icons"><img class="chelsey" src="./images/Chelsey.gif">
+
 				<span class="icons">
 					<a href="https://github.com/eichlerc">
 						<i class="fa fa-github fa-2x chelslink" aria-hidden="true"></i>
@@ -69,6 +80,7 @@
 				</span>
 
 
+
 				<p class="aboutGang"><strong>Chelsey Eichler</strong></p>
 				<p class="aboutGang faveFood"><strong>Role: </strong>design, styles, & js</p>
 				<p class="aboutGang faveFood"><strong>Favorite Food:</strong> Sushi</p>
@@ -76,9 +88,11 @@
 			</span>
 			<span class="thefam icons"><img class="kofi" src="./images/Kofi.gif">
 				<span class="icons">
-					<a href="https://github.com/kyamoah7">
-						<i class="fa fa-github fa-2x kofilink" aria-hidden="true"></i>
-					</a>
+
+				<a href="https://github.com/kyamoah7" target="_blank">
+				<i class="fa fa-github fa-2x kofilink" aria-hidden="true"></i>
+				</a>
+
 
 
 					<a href="https://www.linkedin.com/in/kofi-yamoah-692a4513/" target="_blank">
@@ -94,7 +108,12 @@
 
 
 
+
 		</div>
+
+</modal-dialog>
+	 		<!-- </div> -->
+
 
 		<div class="dating">
 			<h1	class="img-responsive" id="detroit"><br/>
