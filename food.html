@@ -23,7 +23,7 @@
 				<p class="price-range"><strong>COST CATEGORY: </strong>{{ foodstuff.restaurant.price_range}}</p>
 				<p class="currency"><strong>AVERAGE COST FOR TWO: </strong>{{ foodstuff.restaurant.average_cost_for_two}}</p>
 				<p class="rating"><strong>AVERAGE CUSTOMER RATING: </strong>{{ foodstuff.restaurant.user_rating.aggregate_rating}} - {{ foodstuff.restaurant.user_rating.rating_text}} </p>
-				<p class ="url"><button><strong>LEARN MORE<a href="{{foodstuff.restaurant.url}}"></a></p></button>
+				<a ng-href="{{foodstuff.restaurant.url | unsafe}}" target="_blank"><button type="button"><strong>LEARN MORE</strong></button></a>
 			</div>
 
     </div>
