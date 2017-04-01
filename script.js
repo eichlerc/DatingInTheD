@@ -1,7 +1,8 @@
 $(document).ready( function(){
 
-	
+
 scroll1();
+
 
 
 } );
