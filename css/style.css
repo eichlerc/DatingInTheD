@@ -134,6 +134,11 @@ background-position:left right !important;
 
 /*---------------------------RESTAURANT TEXT STYLING---------------------------*/
 
+.listings {
+	width: 100%;
+	margin: 0 auto;
+}
+
 .listings section{
 	background-color: #fff;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -386,19 +391,19 @@ dining columns
 	color: #fff;
 }
 
-	
+
 	.backToTopLink{
 		margin: -15% -15%;
 		font-size: 17px;
 		color: #fff;
-		
+
 	}
 
 
 /**************************
 media queries
 ***************************/
-@media(max-width: 992px){
+/*@media(max-width: 992px){
 	.pagePic{
 		margin: 0% auto;
 		display: block;
@@ -410,19 +415,19 @@ media queries
 	}
 
 	.listings {
-		width: 30%;
+		width: 60%;
 		display: block;
 		margin: 0 auto;
 	}
 
 
-}
+}*/
 
 
 
 
 @media( max-width:990px){
-	
+
 	/*.pagePic{
 		display: none;
 	}*/
@@ -430,7 +435,6 @@ media queries
 
 	.listings {
 		width: 70%;
-
 	}
 	.listings img {
 		margin: 3% 1%;
@@ -444,11 +448,11 @@ media queries
 
 
 
-@media( max-width:760px){
+/*@media( max-width:760px){
 	.listings{
 		text-align: center;
 	}
-}
+}*/
 
 @media( max-width:600px){
 	.mobilePic{
@@ -461,7 +465,20 @@ media queries
 	}
 
 
-	
+
+}
+
+
+@media( max-width:420px){
+	.notext {
+		display: none;
+	}
+
+
+
+}
+
+
 
 	/*.listings section{
 		background-color: #fff;
