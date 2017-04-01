@@ -5,9 +5,15 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-iframe{
+.maps{
 	display: none;
 }
+
+.showmap{
+	display: block;
+
+}
+
 #detroit {
 	/*margin-top: 0;*/
 	/*letter-spacing: 3vh;*/

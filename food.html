@@ -1,11 +1,12 @@
 	<section>
 		<div class="row">
 			<div class="col-md-6">
-				<img ng-src="{{ foodstuff.restaurant.featured_image || 'images/nophoto.jpg' }}">
+				<img class = 'foodpic' ng-src="{{ foodstuff.restaurant.featured_image || 'images/nophoto.jpg' }}"><br>
+				<a href="" ng-click="changeClass()">Show Map</a>
 
-				<iframe
-  width="600"
-  height="450"
+				<iframe ng-class = "className"
+  width="300"
+  height="300"
   frameborder="0" style="border:0"
   ng-src="{{link + foodstuff.restaurant.location.latitude + ',' +foodstuff.restaurant.location.longitude | unsafe}}" >
 </iframe>

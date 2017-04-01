@@ -32,8 +32,16 @@ app.controller('cuisCtrl',function($scope, $sce, dateFactory){
                $scope.IsVisible = $scope.IsVisible ? false : true;
              }
 
+             $scope.className = "maps";
+             $scope.changeClass = function(){
+               if ($scope.className === "maps")
+                 $scope.className = "showmap";
+               else
+                 $scope.className = "maps";
+             };
+           });
 
-});
+
 
 app.filter('unsafe', function($sce){
   return function(val) {

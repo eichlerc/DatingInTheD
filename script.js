@@ -13,4 +13,4 @@ $(".genButton").click(function(){
 			scrollTop: $("#show").offset().top
 		},2500);
 	})
-}
+};
