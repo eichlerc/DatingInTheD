@@ -5,9 +5,15 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-iframe{
+.maps{
 	display: none;
 }
+
+.showmap{
+	display: block;
+
+}
+
 #detroit {
 	/*margin-top: 0;*/
 	/*letter-spacing: 3vh;*/
@@ -374,11 +380,22 @@ dining columns
 }
 
 
+<<<<<<< HEAD
 .backtotop a{
 	font-size: 18px;
 	color: #fff;
 
+=======
+.backToTopLink{
+	 margin: -15% -15%;
+    font-size: 17px;
+    color: #fff;
+>>>>>>> a1fa03c6b729239aec3addb0fa88804bee897477
 }
+
+/*.btnHit{
+	position: fixed;
+}*/
 
 
 /**************************
