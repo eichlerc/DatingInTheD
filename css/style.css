@@ -320,7 +320,7 @@ dining columns
 }
 /*Cheap column*/
 .hazy{
-	height: 100%;
+	height: 611px;
 	/*width: 80%;*/
 	background-color: #96e2c7;
 	padding-top: 0.5%;
@@ -345,7 +345,8 @@ dining columns
 
 /*second column*/
 .hopeful{
-	height: 100%;
+	height: 611px;
+
 	padding-top: 0.5%;
 
 
@@ -370,7 +371,7 @@ dining columns
 
 /*third column*/
 .anniversary{
-	height: 100%;
+	height: 611px;
 	padding-top: 0.5%;
 
 
