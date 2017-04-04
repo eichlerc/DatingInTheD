@@ -1,4 +1,6 @@
 /**Testing**/
+
+
 body {
 	background-color: #ff6353;
 }
@@ -103,6 +105,16 @@ body {
 
 	}
 
+	.instructions {
+		font-size: .75em;
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		font-weight: 400;
+		line-height: normal;
+		text-shadow: #ff6353;
+	}
+
 
 .blackBand{
 	margin-top: 20%;
@@ -137,31 +149,35 @@ h4{
 .listings section{
 	background-color: #fff;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	padding: 3%;
+
+	/*padding-bottom: 3%;*/
+
 
 
 }
 
+		.listings img {
+			margin: 8% 1%;
+			width: 80%;
+			/*clip-path: inset(4px 5px 4px 6px);*/
+			/*height: auto;*/
+			float: left;
+			border-radius: 2%;
+		}
 
-.listings img {
-	margin: 11% 4%;
-	width: 80%;
-	object-fit: cover !important;
-	height: auto;
-	/*clip: rect(8px,150px,129px,7px) !important;*/
-	border-radius: 2%;
-}
 
 
 .listings p {
-	left: 0
-
+/*position: relative;*/
 }
 /*Name of restaurant*/
 .restaurant{
 	margin: 2%;
-	font-size: 30px;
+	font-size: 2em;
 	color: #ff6353;
 	font-weight: 600;
+	line-height: 34px;
 }
 
 /*learn more button*/
@@ -186,6 +202,12 @@ h4{
 	border: none;
 	padding-top: 2%;
 }
+
+.listings a:hover {
+	text-decoration: none;
+}
+
+
 
 /*map background*/
 .map {
@@ -302,11 +324,14 @@ dining columns
 	height: 100%;
 	/*width: 80%;*/
 	background-color: #96e2c7;
+	padding-top: 0.5%;
 }
 
 .hazy h1{
 	text-align: center;
 	font-weight: 700;
+	letter-spacing: 3px;
+
 }
 .hazy h4{
 	margin: 10px 11%;
@@ -322,6 +347,8 @@ dining columns
 /*second column*/
 .hopeful{
 	height: 100%;
+	padding-top: 0.5%;
+
 
 	/*width: 80%;*/
 	background-color: #75d7b4;
@@ -330,6 +357,7 @@ dining columns
 
 	font-weight: 700;
 	text-align: center;
+	letter-spacing: 3px;
 }
 .hopeful h4{
 	margin: 10px 11%;
@@ -344,6 +372,8 @@ dining columns
 /*third column*/
 .anniversary{
 	height: 100%;
+	padding-top: 0.5%;
+
 
 	/*width: 80%;*/
 	background-color: #63d1aa;
@@ -351,6 +381,8 @@ dining columns
 .anniversary h1{
 	font-weight: 700;
 	text-align: center;
+	letter-spacing: 3px;
+
 }
 
 .anniversary h4{
@@ -397,6 +429,93 @@ dining columns
 /**************************
 media queries
 ***************************/
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px)  {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.listings {
+		width: 70%;
+	}
+	.listings img {
+		margin: 3% 1%;
+		width: 40%;
+		height: auto;
+		float: left;
+		border-radius: 2%;
+		padding-right: 5%;
+	}
+	#box {
+		margin-left: 172px;
+		padding-left: 50px;
+
+	}
+
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	.mobilePic{
+		visibility: visible;
+		display: block;
+		margin: 0 auto;
+	}
+	.pagePic{
+		display: none;
+	}
+
+	.listings {
+		width: 80%;
+	}
+	.listings img {
+		margin: 3% 1%;
+		width: 40%;
+		height: auto;
+		float: left;
+		border-radius: 2%;
+		padding-right: 5%;
+	}
+
+
+
+
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+	.notext {
+		display: none;
+	}
+
+	.listings img {
+		display: block;
+		width: 50%;
+		height: auto;
+		border-radius: 2%;
+		padding-right: 5%;
+		margin-top: 2px;
+		position: relative;
+	}
+
+	.listings {
+text-align: center;
+	}
+
+
+}
+
 /*@media(max-width: 992px){
 	.pagePic{
 		margin: 0% auto;
@@ -420,14 +539,14 @@ media queries
 
 
 
-@media( max-width:990px){
+/*@media( max-width:990px){
 
 	/*.pagePic{
 		display: none;
 	}*/
 
 
-	.listings {
+	/*.listings {
 		width: 70%;
 	}
 	.listings img {
@@ -447,7 +566,7 @@ media queries
 		text-align: center;
 	}
 }*/
-
+/*
 @media( max-width:600px){
 	.mobilePic{
 		visibility: visible;
@@ -470,7 +589,7 @@ media queries
 
 
 
-}
+}*/
 
 
 

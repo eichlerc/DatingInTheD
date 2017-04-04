@@ -16,7 +16,7 @@
       <div id="inner-content-div">
 
 			<div class="col-md-6">
-
+<div id = "box">
 				<p class="restaurant"> {{ foodstuff.restaurant.name}}</p>
 				<p class="location"><strong>LOCATION:</strong> {{ foodstuff.restaurant.location.address}} </p>
 				<p class = "cuisine"><strong>CUISINES:</strong> {{ foodstuff.restaurant.cuisines}}</p>
@@ -24,6 +24,7 @@
 				<p class="currency"><strong>AVERAGE COST FOR TWO: </strong>{{ foodstuff.restaurant.average_cost_for_two}}</p>
 				<p class="rating"><strong>AVERAGE CUSTOMER RATING: </strong>{{ foodstuff.restaurant.user_rating.aggregate_rating}} - {{ foodstuff.restaurant.user_rating.rating_text}} </p>
 				<a ng-href="{{foodstuff.restaurant.url | unsafe}}" target="_blank"><button type="button"><strong>LEARN MORE</strong></button></a>
+</div>
 			</div>
 
     </div>
