@@ -2,14 +2,15 @@
 		<div class="row">
 			<div class="col-md-6">
 				<img class = 'foodpic' ng-src="{{ foodstuff.restaurant.featured_image || 'images/nophoto.jpg' }}"><br>
-				<a href="" ng-click="changeClass()">Show Map</a>
 
-				<iframe ng-class = "className"
+
+				<iframe  ng-class="{ 'hidden': ! showDetails }"
   width="300"
   height="300"
   frameborder="0" style="border:0"
   ng-src="{{link + foodstuff.restaurant.location.latitude + ',' +foodstuff.restaurant.location.longitude | unsafe}}" >
 </iframe>
+<a href="" ng-click="showDetails = ! showDetails" >Show/Hide Map</a>
 			</div>
       <div class="some-content-related-div">
 

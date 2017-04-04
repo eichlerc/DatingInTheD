@@ -34,14 +34,6 @@ app.controller('cuisCtrl',function($scope, $sce, dateFactory){
                //If DIV is visible it will be hidden and vice versa.
                $scope.IsVisible = $scope.IsVisible ? false : true;
              }
-//below is for the maps.
-             $scope.className = "maps";
-             $scope.changeClass = function(){
-               if ($scope.className === "maps")
-                 $scope.className = "showmap";
-               else
-                 $scope.className = "maps";
-             };
 
              $scope.modalShown = false;
              $scope.toggleModal = function() {
