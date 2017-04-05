@@ -315,15 +315,18 @@ h4{
 /*************************************
 dining columns
 ********************************/
+
+
 .innerdiv{
 	width:65%;
-	margin: auto;
-	padding: 20px;
+	margin: 10px auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
 
 }
 /*Cheap column*/
 .hazy{
-	height: 611px;
+	height: 530px;
 	/*width: 80%;*/
 	background-color: #96e2c7;
 	padding-top: 0.5%;
@@ -336,20 +339,19 @@ dining columns
 
 }
 .hazy h4{
-	margin: 10px 11%;
+	margin: 10px;
 }
 .hazy p{
-	margin: 0 12%;
+	margin: 0;
 }
 
 .hazy li{
-	margin: 0 4%;
+	margin: 0 2%;
 }
 
 /*second column*/
 .hopeful{
-	height: 611px;
-
+	height: 530px;
 	padding-top: 0.5%;
 
 
@@ -363,18 +365,18 @@ dining columns
 	letter-spacing: 3px;
 }
 .hopeful h4{
-	margin: 10px 11%;
+	margin: 10px;
 }
 .hopeful p{
-	margin: 0 12%;
+	margin: 0;
 }
 .hopeful li{
-	margin: 0 4%;
+	margin: 0 2%;
 }
 
 /*third column*/
 .anniversary{
-	height: 611px;
+	height: 530px;
 	padding-top: 0.5%;
 
 
@@ -389,13 +391,13 @@ dining columns
 }
 
 .anniversary h4{
-	margin: 10px 11%;
+	margin: 10px;
 }
 .anniversary p{
-	margin: 0 12%;
+	margin: 0;
 }
 .anniversary li{
-	margin: 0 4%;
+	margin: 0 2%;
 
 }
 
@@ -405,13 +407,27 @@ dining columns
 	border-style: none;
 	border-radius: 2px;
 	text-align: center;
-	margin: 0 40% 10%;
+	display: block;
+	margin: 20px auto;
 	color: #91e1c5;
+	text-decoration: none;
+
 }
 
 .genButton:hover {
 	background-color: white;
 	color: #ff6353;
+	text-decoration: none;
+
+}
+
+.genButton a:hover {
+	background-color: white;
+	color: #ff6353;
+	text-decoration: none;
+}
+.genButton a {
+	text-decoration: none;
 }
 .dollar{
 	margin-top: 0;
@@ -445,6 +461,69 @@ media queries
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+.innerdiv {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+	.hazy {
+		height: 430px;
+		margin: 0 auto;
+	}
+	.hazy p {
+		width: 60%;
+		display: block;
+		margin: 0 auto;
+	}
+	.hazy ul {
+		display: block;
+		margin-left: 15%;
+	}
+
+	.hazy h4 {
+		margin-left: 19%;
+	}
+/*hopeful*/
+
+	.hopeful {
+		height: 430px;
+		margin: 0 auto;
+	}
+	.hopeful p {
+		width: 60%;
+		display: block;
+		margin: 0 auto;
+	}
+	.hopeful ul {
+		display: block;
+		margin-left: 15%;
+	}
+
+	.hopeful h4 {
+		margin-left: 19%;
+	}
+	/*anniversary*/
+
+		.anniversary {
+			height: 430px;
+			margin: 0 auto;
+		}
+		.anniversary p {
+			width: 60%;
+			display: block;
+			margin: 0 auto;
+		}
+		.anniversary ul {
+			display: block;
+			margin-left: 15%;
+		}
+
+		.anniversary h4 {
+			margin-left: 19%;
+		}
+	.innerdiv {
+		margin-top: 20px;
+	}
+
 	.listings {
 		width: 70%;
 	}
@@ -491,9 +570,6 @@ media queries
 
 
 
-
-
-
 }
 
 
@@ -511,6 +587,18 @@ media queries
     background-color: #fff;
     box-shadow: 4px 4px 80px #000;
 }
+.hazy {
+	height: 430px;
+	margin: 0 auto;
+}
+.hopeful {
+	height: 430px;
+	margin: 0 auto;
+}
+.anniversary {
+	height: 430px;
+	margin: 0 auto;
+}
 
 }
 
@@ -519,7 +607,7 @@ media queries
 	.ng-modal-dialog {
     z-index: 10000;
     position: absolute;
-    width: 70%; 
+    width: 70%;
     height: auto;
     top: 59%;
     left: 50%;
@@ -533,7 +621,18 @@ media queries
 
 
 @media (max-width: 480px) {
-
+	.hazy {
+		height: 260px;
+		margin: 0 auto;
+	}
+	.hopeful {
+		height: 260px;
+		margin: 0 auto;
+	}
+	.anniversary {
+		height: 260px;
+		margin: 0 auto;
+	}
 	.notext {
 		display: none;
 	}
