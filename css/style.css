@@ -4,7 +4,10 @@ body {
 *{
 	font-family: 'Montserrat', sans-serif;
 }
-
+.scrolly{
+	height: 1000px;
+	overflow-y: scroll;
+}
 /*modal-dialog{
 	width: 50%;
 	height: auto;
