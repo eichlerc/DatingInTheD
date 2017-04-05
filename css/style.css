@@ -4,7 +4,10 @@ body {
 *{
 	font-family: 'Montserrat', sans-serif;
 }
-
+.scrolly{
+	height: 1000px;
+	overflow-y: scroll;
+}
 /*modal-dialog{
 	width: 50%;
 	height: auto;
@@ -519,7 +522,7 @@ media queries
 	.ng-modal-dialog {
     z-index: 10000;
     position: absolute;
-    width: 70%; 
+    width: 70%;
     height: auto;
     top: 59%;
     left: 50%;

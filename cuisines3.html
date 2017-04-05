@@ -1,11 +1,12 @@
 <br>
 <input id="filterinput" placeholder="Filter By Cuisine or Restaurant Name" type="text" ng-model = 'listItem' ng-model = 'price'></input>
 
-
+<div class = "scrolly">
 <div ng-show='foodstuff.restaurant.price_range == price[2] ||foodstuff.restaurant.price_range == price[3] ' class ="listings" ng-repeat="foodstuff in food | filter: listItem">
 	<food-directive></food-directive>
 
 
+</div>
 </div>
 
 <!-- <br>
