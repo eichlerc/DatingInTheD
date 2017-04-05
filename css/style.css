@@ -94,6 +94,7 @@ body {
 .navbar li {
 	display: inline;
 	padding-right: 10px;
+	padding-left: 5px;
 }
 
 .navbar a {
@@ -129,7 +130,7 @@ body {
 		margin: 0 auto;
 		font-weight: 400;
 		line-height: normal;
-		text-shadow: #ff6353;
+		text-shadow: 0px 5px 10px #b73333;
 	}
 
 
@@ -344,7 +345,6 @@ dining columns
 /*Cheap column*/
 .hazy{
 	height: 530px;
-	/*width: 80%;*/
 	background-color: #96e2c7;
 	padding-top: 0.5%;
 }
@@ -370,9 +370,6 @@ dining columns
 .hopeful{
 	height: 530px;
 	padding-top: 0.5%;
-
-
-	/*width: 80%;*/
 	background-color: #75d7b4;
 }
 .hopeful h1{
@@ -395,9 +392,6 @@ dining columns
 .anniversary{
 	height: 530px;
 	padding-top: 0.5%;
-
-
-	/*width: 80%;*/
 	background-color: #63d1aa;
 }
 .anniversary h1{
@@ -443,9 +437,7 @@ dining columns
 	color: #ff6353;
 	text-decoration: none;
 }
-.genButton a {
-	text-decoration: none;
-}
+
 .dollar{
 	margin-top: 0;
 }
