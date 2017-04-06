@@ -496,6 +496,7 @@ media queries
 	.hazy {
 		height: 430px;
 		margin: 0 auto;
+		z-index: 1;
 	}
 	.hazy p {
 		width: 60%;
@@ -515,6 +516,7 @@ media queries
 	.hopeful {
 		height: 430px;
 		margin: 0 auto;
+		z-index: 1;
 	}
 	.hopeful p {
 		width: 60%;
@@ -534,6 +536,7 @@ media queries
 		.anniversary {
 			height: 430px;
 			margin: 0 auto;
+			z-index: 1;
 		}
 		.anniversary p {
 			width: 60%;
