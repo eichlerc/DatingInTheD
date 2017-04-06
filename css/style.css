@@ -351,7 +351,7 @@ dining columns
 	height: 530px;
 	background-color: #96e2c7;
 	padding-top: 0.5%;
-	z-index: 4;
+	z-index: 2;
 
 }
 
@@ -403,6 +403,7 @@ margin: 0 2%;
 	height: 530px;
 	padding-top: 0.5%;
 	background-color: #63d1aa;
+	z-index: 4;
 
 }
 .anniversary h1{
@@ -469,6 +470,26 @@ position: fixed;
 top: 95%;
 right: 0%;
 z-index: 0;
+background-color: black;
+color: #91e1c5;
+border: none;
+}
+
+.btnHit:hover {
+display: inline-block;
+position: fixed;
+top: 95%;
+right: 0%;
+z-index: 0;
+background-color: white;
+color: #ff6353;
+text-decoration: none;
+
+
+}
+
+.btnHit a:hover {
+text-decoration: none;
 }
 
 
@@ -487,7 +508,8 @@ media queries
 
 
 /* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) 	and (max-width: 991px) {
+
 
 .innerdiv {
 	margin-top: 0px;
@@ -496,6 +518,7 @@ media queries
 	.hazy {
 		height: 430px;
 		margin: 0 auto;
+		z-index: 1;
 	}
 	.hazy p {
 		width: 60%;
@@ -515,6 +538,7 @@ media queries
 	.hopeful {
 		height: 430px;
 		margin: 0 auto;
+		z-index: 1;
 	}
 	.hopeful p {
 		width: 60%;
@@ -534,6 +558,7 @@ media queries
 		.anniversary {
 			height: 430px;
 			margin: 0 auto;
+			z-index: 1;
 		}
 		.anniversary p {
 			width: 60%;
@@ -646,6 +671,9 @@ background-color: #fff;
 box-shadow: 4px 4px 80px #000;
 
 }
+.btnHit{
+	visibility: hidden;
+}
 
 
 @media (max-width: 480px) {
@@ -680,15 +708,7 @@ box-shadow: 4px 4px 80px #000;
 .listings {
 	text-align: center;
 }
-.btnHit {
-	display: inline-block;
-	position: fixed;
-	top: 96%;
-	right: 0%;
-	z-index: 0;
 
-
-}
 .genButton {
 	background-color: #111;
 	border-style: none;
@@ -697,6 +717,7 @@ box-shadow: 4px 4px 80px #000;
 	margin: 0 auto 10%;
 	color: #91e1c5;
 	display: block;
+	border: none;
 }
 
 @media (max-width: 450px){
