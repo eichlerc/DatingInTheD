@@ -111,7 +111,7 @@ color: #96e2c7;
 
 .header{
 
-background: url(../images/Header.jpg) no-repeat;
+background: url(../images/header2.jpg) no-repeat;
 background-repeat:no-repeat !important;
 -webkit-background-size:cover !important;
 -moz-background-size:cover !important;
@@ -469,6 +469,26 @@ position: fixed;
 top: 95%;
 right: 0%;
 z-index: 0;
+background-color: black;
+color: #91e1c5;
+border: none;
+}
+
+.btnHit:hover {
+display: inline-block;
+position: fixed;
+top: 95%;
+right: 0%;
+z-index: 0;
+background-color: white;
+color: #ff6353;
+text-decoration: none;
+
+
+}
+
+.btnHit a:hover {
+text-decoration: none;
 }
 
 
@@ -700,6 +720,7 @@ box-shadow: 4px 4px 80px #000;
 	margin: 0 auto 10%;
 	color: #91e1c5;
 	display: block;
+	border: none;
 }
 
 @media (max-width: 450px){
